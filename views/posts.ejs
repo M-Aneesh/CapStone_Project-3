@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View All Posts</title>
+    <link rel="stylesheet" href="/posts.css">
+</head>
+<body>
+    <h1>Viewing all posts</h1>
+    <% if (posts.length === 0) { %>
+        <p>No posts available</p>
+    <% } else { %>
+        <% posts.forEach(function(data, index) { %>
+        <div class="post-card">
+            <h2><%= data.title %></h2>
+            <p><%= data.content %></p>
+            <form action="/update/<%= index %>" method="GET">
+                <button type="submit">EDIT</button>
+            </form>
+            <form action="/delete/<%= index %>" method="POST">
+                <button type="submit">DELETE</button>
+            </form>
+        </div>
+    <% }) %>
+    <% } %>
+    <a href="/">Go back to Home Page</a>
+</body>
+</html>

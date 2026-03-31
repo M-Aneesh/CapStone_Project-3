@@ -1,0 +1,84 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    color: #2d3436;
+}
+
+.edit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.edit-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.edit-card h1 {
+    text-align: center;
+}
+
+.edit-card input, .edit-card textarea {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #dcdde1;
+    width: 100%;
+}
+
+.edit-card textarea {
+    height: 120px;
+    resize: none;
+}
+
+.edit-card input:focus, .edit-card textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.edit-card button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.2s ease;
+}
+
+.edit-card button:hover {
+    background-color: #2980b9;
+    transform: scale(1.03);
+}
+
+.back-btn {
+    display: block;
+    text-align: center;
+    background-color: #7f8c8d;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.back-btn:hover {
+    background-color: #636e72;
+}
+
+@media (max-width: 768px) {
+    .edit-card {
+        width: 90%;
+    }
+}

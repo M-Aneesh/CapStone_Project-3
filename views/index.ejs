@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <title>Blog Web Application</title>
+</head>
+<body>
+        <div class="container">
+            <div class="main">
+                <h1>Blog Web Application</h1>
+                <form action ="/create" method = "POST"  >
+                    <input name="title" type="text" placeholder="Enter title" required>
+                    <textarea name="content" placeholder="Enter content" required> </textarea>
+                    <button type="submit">CREATE</button>
+                </form>
+            </div>
+            <div class="sidebar">
+                <form action="/view" method="GET">
+                    <button type="submit">VIEW ALL BLOG POSTS</button>
+                </form>
+            </div>
+    </div>
+</body>
+</html>

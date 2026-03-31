@@ -1,0 +1,81 @@
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    color: #2d3436;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.post-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.post-card h2 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.post-card p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.post-card form button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+    transition: 0.2s ease;
+}
+
+.post-card form button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+a {
+    display: block;
+    width: max-content;
+    margin: 30px auto 0 auto;
+    background-color: #7f8c8d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.2s ease;
+}
+
+a:hover {
+    background-color: #636e72;
+}
+
+@media (max-width: 768px) {
+    .post-card {
+        width: 95%;
+        margin: 0 auto 20px auto;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
