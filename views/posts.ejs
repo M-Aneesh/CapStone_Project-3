@@ -11,14 +11,14 @@
     <% if (posts.length === 0) { %>
         <p>No posts available</p>
     <% } else { %>
-        <% posts.forEach(function(data, index) { %>
+        <% posts.forEach(function(data) { %>
         <div class="post-card">
             <h2><%= data.title %></h2>
-            <p><%= data.content %></p>
-            <form action="/update/<%= index %>" method="GET">
+            <p><%= data.content %></p>  
+            <form action="/edit/<%= data.id %>" method="GET">
                 <button type="submit">EDIT</button>
             </form>
-            <form action="/delete/<%= index %>" method="POST">
+            <form action="/delete/<%= data.id %>" method="POST">
                 <button type="submit">DELETE</button>
             </form>
         </div>
